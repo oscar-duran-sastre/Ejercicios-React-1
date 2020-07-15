@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
-import Contador from './Contador';
+import React from 'react';
 
-const Boton = () => {
-    const [clicks, setClicks] = useState(0);
-
-    const sumaClick = () => {
-        setClicks(clicks + 1);
-        return Contador(clicks);
-    }
-
+const Boton = (props) => {
     return (
-        <button className="btn btn-info" onClick={sumaClick}>suma 1</button>
+        <button className="btn btn-info" onClick={props.func}>suma 1</button>
     );
 };
 
