@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Contador from './Contador';
 
 const Boton = () => {
-    
+    const [clicks, setClicks] = useState(0);
+
     const sumaClick = () => {
-        // Ingresa aquí tu código para aumentar el contador
+        setClicks(clicks + 1);
+        return Contador(clicks);
     }
 
     return (

@@ -2,13 +2,13 @@ import React from 'react';
 import MyLabel from './MyLabel';
 import Boton from './Boton';
 
-const Contador = () => {
-    
-    
+const Contador = (props) => {
+
+
 
     return (
         <div className="alert alert-primary">
-            <MyLabel />
+            <MyLabel number={props.clicks} />
             <Boton />
         </div>
     );
