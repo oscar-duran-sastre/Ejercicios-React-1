@@ -2,7 +2,6 @@ import React from 'react';
 import Hijo from "./Hijo";
 
 class Padre extends React.Component {
-    // const text = "Hola Mundo";
     constructor(props) {
         super(props);
         this.state = { text: "Hola Mundo" };
